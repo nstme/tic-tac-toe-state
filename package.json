@@ -1,0 +1,36 @@
+{
+  "name": "tic-tac-toe-state",
+  "version": "1.0.0",
+  "description": "A state machine for Tic Tac Toe",
+  "main": "index.js",
+  "repository": "https://github.com/nstme/tic-tac-toe-web.git",
+  "author": "The tic tac toe squad",
+  "license": "MIT",
+  "scripts": {
+    "dev": "jest --watch",
+    "docker-build": "docker build . -t tic-tac-toe-state",
+    "docker-run": "docker run -d -p 3000:3000 --name tic-tac-toe-state",
+    "docker-stop": "docker stop tic-tac-toe-state",
+    "start": "ts-node ./src/index.ts",
+    "test": "jest -b --coverage"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/faker": "^5.1.7",
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "faker": "^5.4.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.2.1",
+    "ts-jest": "^27.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.2"
+  }
+}
