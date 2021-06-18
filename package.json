@@ -15,9 +15,11 @@
     "test": "jest -b --coverage"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.10",
     "@types/express": "^4.17.12",
     "@types/faker": "^5.1.7",
     "@types/jest": "^26.0.20",
