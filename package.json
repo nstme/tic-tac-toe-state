@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "jest --watch",
     "docker-build": "docker build . -t tic-tac-toe-state",
-    "docker-run": "docker run -d -p 3000:3000 --name tic-tac-toe-state",
+    "docker-run": "docker run -d -p 3001:3000 --name tic-tac-toe-state",
     "docker-stop": "docker stop tic-tac-toe-state",
     "start": "ts-node ./src/index.ts",
     "test": "jest -b --coverage"

@@ -1,11 +1,11 @@
 FROM node:14
+
 WORKDIR /app
+COPY . .
+RUN ls -lha
 
-COPY package*.json ./
-RUN npm install
-
-COPY ./dist .
+RUN yarn install
 
 EXPOSE 3000
-CMD [ "node", "index.js" ]
 
+CMD [ "yarn", "start" ]
